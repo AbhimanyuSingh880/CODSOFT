@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>best online delevry service</title>
+        <!-- <link rel="stylesheet" href="style60.css"> -->
+        <link rel="stylesheet" media="screen and (max-width:800px)" href="phone.css">
+
+    </head>
+    <style>
+   * {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+/* navigation:logo and logo img */
+#logo {
+    margin: 9px 17px;
+}
+
+#logo img {
+    height: 54px;
+    margin: 4px 5px;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    margin: 30px;
+}
+
+#navbar::before {
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: rgb(6, 5, 5);
+    background-color: azure;
+
+}
+
+/* navigation:logo and logo img */
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: " ";
+    background: url(img2/food1.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 75%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.98;
+
+}
+
+#home p {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#home h1 {
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+
+.h-primary {
+    font-size: 3.8rem;
+    padding: 20px;
+
+
+}
+
+/* services section */
+#services {
+    margin: 18px;
+    display: flex;
+    /* padding: 30px; */
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 9px 6px;
+    padding: 35px;
+    background-color: rgb(230, 234, 235);
+    border-radius: 30px;
+}
+
+#services .box p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#client-section {
+    /* height: 350px; */
+    position: relative;
+
+}
+#client-section::before{
+    content:'';
+    position: absolute;
+    background: url(img2/food.jpg)no-repeat center center/cover;
+    border-radius: 40px;
+    
+    width: 100%;
+    height: 320px;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+ 
+
+.client-item {
+    padding: 26px;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+}
+/* contact-section */
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content:" ";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(img2/contact.jpg)no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem; 
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px ;
+}
+
+
+.box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    border-radius: 45px;
+
+}
+
+.h-secandary {
+    font-size: 2.8rem;
+    padding: 28px;
+
+
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid rgb(11, 130, 203);
+    border-radius: 25px;
+    background-color: blanchedalmond;
+    box-shadow: 3px 4px 7px rgb(35, 8, 8);
+    margin: 17px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+    </style>
+
+    <body>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="img2/logo.jpg" alt="">
+            </div>
+            <ul>
+                <li class="item"><a href="#home">HOME</a></li>
+                <li class="item"><a href="#services">SERVICES</a></li>
+                <li class="item"><a href="#client-section">OUR CLIENT</a></li>
+                <li class="item"><a href="#contact ">CONTACT US</a></li>
+
+            </ul>
+        </nav>
+        <section id="home">
+            <h1 class="h-primary">welcome to myonline meal </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus dolore est officiis dolores ratione,
+                molestias sit expedita consequuntur !</p>
+            <button class="btn">ORDER NOW</button>
+        </section>
+        <section class="services-container">
+            <h1 class="h-primary center">our services</h1>
+            <div id="services">
+                <div class="box">
+                    <img src="img2/packing.jpg" alt="">
+                    <h2 class="h-secandary center">Food packing</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut magni nisi fugit
+                        expedita,
+                        blanditiis assumenda temporibus suscipit beatae commodi cum nulla! Ratione id ad ex dolorem
+                        eligendi minima illo obcaecati, vero a similique?</p>
+                </div>
+                <div class="box">
+                    <img src="img2/flight.jpg" alt="">
+                    <h2 class="h-secandary center">Food ordring</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut magni nisi fugit
+                        expedita,
+                        blanditiis assumenda temporibus suscipit beatae commodi cum nulla! Ratione id ad ex dolorem
+                        eligendi minima illo obcaecati, vero a similique?</p>
+                </div>
+                <div class="box">
+                    <img src="img2/3.jpg" alt="">
+                    <h2 class="h-secandary center">Food catring</h2>
+                    <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aut magni nisi fugit
+                        expedita,
+                        blanditiis assumenda temporibus suscipit beatae commodi cum nulla! Ratione id ad ex dolorem
+                        eligendi minima illo obcaecati, vero a similique?</p>
+                </div>
+
+
+        </section>
+        <section id="client-section">
+            <h1 class="h-primary center">our clients</h1>
+            <div id="clients">
+                <div class="client-item">
+                    <img src="img2/logo A .jpg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="img2/logo2.jpg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="img2/logo3.jpg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="img2/logo4.jpg" alt="">
+                </div>
+                <div class="client-item">
+                    <img src="img2/logo5.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1 class="h-primary center">contact us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" placeholder="enter your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email:</label>
+                        <input type="Email" name="name" id="Email" placeholder="enter your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone no.:</label>
+                        <input type="phone" name="name" id="phone" placeholder="enter your Phone number">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address:</label>
+                        <input type="address" name="name" id="address" placeholder="enter your full address">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer>
+            <div class="center">
+                copyright &copy; www.best online delevry service.com all rights reseved!
+            </div>
+        </footer>
+    </body>
+</html>
